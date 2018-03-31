@@ -1,0 +1,25 @@
+<!-- Problem Begin -->
+<style type="text/css" media="screen">
+  #editor_{{ include.problemId }} {
+    float: left;
+    width: 100%;
+    height: 100px;
+  }
+</style>
+
+<div id="editor_{{ include.problemId }}"></div>
+<div id="error_{{ include.problemId }}"></div>
+<button type="button" id="{{ include.problemId }}_button" onclick="{{ include.problemId  }}_submit();">Run</button>
+
+<script src="assets/js/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="assets/js/jquery.rest/dist/1/jquery.rest.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/problem.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  var {{ include.problemId  }}_submit = problem('{{ include.problemId }}',
+                                                '{{ include.fn }}',
+                                                `{{ include.source}}`)
+</script>
+
+<!-- Problem End -->

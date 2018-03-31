@@ -53,6 +53,8 @@ pinterest_url:
 slack_url:
 twitter_url:
 
+highlighter: rouge
+  
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
