@@ -1,6 +1,6 @@
-[submodule "assets/js/ace-builds"]
-	path = assets/js/ace-builds
-	url = https://github.com/ajaxorg/ace-builds.git
 [submodule "assets/js/jquery.rest"]
 	path = assets/js/jquery.rest
 	url = https://github.com/jpillora/jquery.rest.git
+[submodule "assets/js/ace-builds"]
+	path = assets/js/ace-builds
+	url = https://github.com/ajaxorg/ace-builds.git

@@ -23,7 +23,14 @@ This would multiply `5` with `6` and store the result in a _variable_ called `th
 
 Can you make the following function return `42`?
 {% include problem.html problemId="problem_1" fn="fourtytwo" source="
-auto fourtytwo(std::string str) {
+#include <iostream>
+
+auto fourtytwo() {
   return 0;
+}
+
+int main() {
+	std::cout << fourtytwo();
+	return 0;
 }
 "%}

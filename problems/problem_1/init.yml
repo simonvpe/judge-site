@@ -1,0 +1,2 @@
+test_cases:
+  - {points: 10, in: test_1.in, out: test_1.out}
