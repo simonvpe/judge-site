@@ -23,14 +23,25 @@ This would multiply `5` with `6` and store the result in a _variable_ called `th
 
 Can you make the following function return `42`?
 {% include problem.html problemId="problem_1" fn="fourtytwo" source="
+// This tells the compiler that we are interested in the input-/outputstream functionality.
+// We need that in order to reply to the Judge so that it can grade our problem submission
 #include <iostream>
 
+// This is the function that you need to modify
 auto fourtytwo() {
   return 0;
 }
 
+// This is the entrypoint of the program, this function gets executed automatically
+// when the program is started
 int main() {
+
+	// This sends the result of the function you modified to standard output, this is how
+	// you tell the Judge what your answer is
 	std::cout << fourtytwo();
+	
+	// This returns zero to the operating system, signalling that the program exited
+	// with a success status
 	return 0;
 }
 "%}
